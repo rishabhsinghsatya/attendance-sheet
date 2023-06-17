@@ -1,0 +1,391 @@
+/*   
+color: #979797;
+    background-color: #640000;
+*/
+/* .App {
+  text-align: center;
+} */
+
+@import url("https://use.typekit.net/avl5wkq.css");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* yewr wise container*/
+.arrow {
+  height: 30px;
+  cursor: pointer;
+}
+.heading {
+  font-size: 24px;
+  color: #640000;
+}
+.year-container {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  padding: 32px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: rgb(223, 215, 215);
+}
+.yearwise-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+/*session*/
+.session {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+/*attendance with course*/
+.attendance-heading {
+  font-size: 35px;
+  background-color: white;
+  font-family: "Pattaya", sans-serif;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+.course-heading {
+  font-size: 20px;
+  font-family: serif;
+  color: white;
+}
+.attendance-course-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+}
+/*session heading*/
+.session {
+  text-align: center;
+}
+.attendance-session {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/* college name to state name*/
+.collagename {
+  height: 70px;
+  margin-top: 20px;
+}
+.state-name {
+  color: white;
+  font-size: 25px;
+}
+.uplogo {
+  height: 100px;
+  width: 100px;
+}
+.collage-state-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.uplogo-course {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*style for main container*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px;
+  background-color: #640000;
+}
+
+/*style for second page*/
+
+/*date style*/
+.date {
+  font-size: 24px;
+  color: #640000;
+}
+.header-heading {
+  font-family: "Pattaya", sans-serif;
+  font-size: 30px;
+  color: #640000;
+}
+.date-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  background-color: rgb(219, 216, 216);
+}
+
+/*footer*/
+.footer {
+  color: #640000;
+  background-color: rgb(219, 216, 216);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.footer:hover {
+  background-color: #640000;
+  color: white;
+  cursor: pointer;
+}
+.back-btn {
+  width: 35px;
+  cursor: pointer;
+}
+.forward-btn {
+  width: 35px;
+  cursor: pointer;
+}
+
+.button-container {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*full second page*/
+
+.full-second-page,
+.second-year-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #640000;
+  padding: 10px;
+}
+.present {
+  color: #640000;
+  background-color: rgb(219, 216, 216);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.present:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.absent {
+  color: #800d0d;
+  background-color: rgb(219, 216, 216);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.absent:hover {
+  background-color: #640000;
+  color: white;
+  cursor: pointer;
+}
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 216, 216);
+}
+.list-heading > p {
+  font-size: 22px;
+  color: #640000;
+}
+
+.name-roll {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 216, 216);
+  padding: 3px;
+  align-items: center;
+  border-radius: 5px;
+}
+.name-roll > p {
+  font-size: 20px;
+  font-weight: bold;
+  width: 6%;
+}
+.name-roll > h3 {
+  width: 30%;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.active {
+  color: green;
+  font-size: 50px;
+}
+.thirdpage-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(219, 216, 216);
+}
+
+.saveimage {
+  width: 37px;
+  height: 34px;
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8.5px;
+  background-color: rgb(219, 216, 216);
+}
+.list-item {
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(219, 216, 216);
+  color: #640000;
+}
+.list-item::marker {
+  color: #640000;
+}
+.attendance {
+  color: white;
+}
+.background-thirdyearpdf {
+  background-color: #640000;
+}
+.greenColor {
+  color: green;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*media query*/
+@media only screen and (max-width: 450px) {
+  .name-roll > h3 {
+    font-size: 10px;
+  }
+  .present {
+    font-size: 10px;
+    height: 22px;
+  }
+  .absent {
+    background-color: rgb(219, 216, 216);
+    font-size: 10px;
+    border-radius: 10px;
+  }
+  .name-roll {
+    align-items: center;
+  }
+  .name-roll > p {
+    font-size: 10px;
+    width: 6%;
+  }
+  .heading {
+    font-size: 20px;
+  }
+
+  .header-heading {
+    font-size: 25px;
+  }
+  .list-heading > p {
+    font-size: 15px;
+  }
+  .list-container {
+    gap: 10px;
+  }
+  .button-container {
+    padding: 3px;
+  }
+  .thirdpage-footer {
+    padding: 3px;
+  }
+
+  .arrow {
+    height: 20px;
+  }
+  .attendance {
+    font-size: 15px;
+  }
+}
